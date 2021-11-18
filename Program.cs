@@ -14,7 +14,7 @@ namespace testapp
             Console.WriteLine("Перечислите всех участников через пробел. (Например: Лена Леша Паша Анна)");
             all = Console.ReadLine().Split(" ").ToList();
 
-            Console.WriteLine("Перечислите пары которые не должны попадть друг другу. Что бы закончить ввод пар, введите «Конец»");
+            Console.WriteLine("Перечислите пары которые не должны попадать друг другу. Что бы закончить ввод пар, введите «Конец»");
             while (true)
             {
 
@@ -66,7 +66,7 @@ namespace testapp
             Console.WriteLine("Итоговый список:");
             foreach (KeyValuePair<string, string> kvp in finaly)
             {
-                Console.WriteLine("{0} {1}", kvp.Key.Substring(0, 1).ToUpper() + kvp.Key.Substring(1, kvp.Key.Length - 1), kvp.Value.Substring(0, 1).ToUpper() + kvp.Value.Substring(1, kvp.Value.Length - 1));
+                Console.WriteLine("{0} => {1}", kvp.Key.Substring(0, 1).ToUpper() + kvp.Key.Substring(1, kvp.Key.Length - 1), kvp.Value.Substring(0, 1).ToUpper() + kvp.Value.Substring(1, kvp.Value.Length - 1));
             }
 
             Console.ReadLine();
